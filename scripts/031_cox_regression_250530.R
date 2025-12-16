@@ -188,7 +188,7 @@ res <- bind_rows(crude_res, main_res, extend_res) %>%
   arrange(expo, model)
 writexl::write_xlsx(res, paste0('Output/', Sys.Date(), '_results.xlsx'))
 
-# Primary analysis but for separate particle exposures -------------------------
+# Secondary analysis but for separate particle exposures -------------------------
 expo_sep <- paste0(list('mmmf', 'asb', 'dies', 'svet', 'asf', 'kva', 'woo', 'cem', 'bet'),
                    '_bin')
 
